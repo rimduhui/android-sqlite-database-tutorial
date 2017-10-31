@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rimduhui.sqlitedatabasetutorial.MainActivity">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        />
+
+    <EditText
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="subtitle"
+        />
+
+    <EditText
+        android:id="@+id/target_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="target_title"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:onClick="onCreateItem"
+            />
+
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Read"
+            android:onClick="onReadItem"
+            />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:onClick="onUpdateItem"
+            />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:onClick="onDeleteItem"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+</LinearLayout>
